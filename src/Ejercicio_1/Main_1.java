@@ -6,29 +6,29 @@ public class Main_1 {
 
         // MOSTRAR LISTA VACÍA
 
-        System.out.println(ListaSimplementeEnlazada.estaVacia());
+        System.out.println(lista.estaVacia());
 
         // INSERTAR O ELIMINAR DATOS DE LA LISTA
 
-        ListaSimplementeEnlazada.insertar(5);
-        ListaSimplementeEnlazada.insertar(4);
-        ListaSimplementeEnlazada.insertar(3);
-        ListaSimplementeEnlazada.insertar(2);
-        ListaSimplementeEnlazada.insertar(1);
-        ListaSimplementeEnlazada.insertar(0);
+        lista.insertar(5);
+        lista.insertar(4);
+        lista.insertar(3);
+        lista.insertar(2);
+        lista.insertar(1);
+        lista.insertar(0);
 
         // MOSTRAMOS NUESTRA LISTA
 
-        ListaSimplementeEnlazada.mostrar();
+        lista.mostrar();
 
         // ELIMINAR ALGUNOS ELEMENTOS
 
-        ListaSimplementeEnlazada.eliminar();
-        ListaSimplementeEnlazada.eliminar();
+        lista.eliminar();
+        lista.eliminar();
 
         // MOSTRAR NUEVAMENTE LA LISTA
 
-        ListaSimplementeEnlazada.mostrar();
+        lista.mostrar();
 
     }
 }

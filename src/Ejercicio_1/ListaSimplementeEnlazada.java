@@ -1,17 +1,17 @@
 package Ejercicio_1;
 
 public class ListaSimplementeEnlazada {
-    static Nodo primero;
+    protected Nodo primero;
 
     public ListaSimplementeEnlazada() {
         primero = null;
     }
 
-    public static boolean estaVacia() {
+    public boolean estaVacia() {
         return primero == null;
     }
 
-    public static void insertar(Object dato) {
+    public void insertar(Object dato) {
         if (estaVacia()) {
             Nodo nuevo = new Nodo(dato, null);
             primero = nuevo;
@@ -21,13 +21,13 @@ public class ListaSimplementeEnlazada {
         }
     }
 
-    public static void eliminar() {
+    public void eliminar() {
         if (!estaVacia()) {
             primero = primero.getSiguiente();
         }
     }
 
-    public static void mostrar() {
+    public void mostrar() {
         Nodo tmp = primero;
         while (tmp != null) {
             System.out.print(tmp.getDato() + " | | ");
